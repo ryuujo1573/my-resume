@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "paths": {"@assets/":["./src/icons/"]},
         "outDir": "./dist/",
         "module": "es2022",
         "target": "es5",
@@ -12,7 +13,8 @@
         "moduleResolution": "node16",
     },
     "include": [
-        "./src/**/*.ts",
-        "./src/**/*.tsx",
+        "**/*.tsx",
+        "**/*.ts",
+        "src/declarations/csstype.d.ts",
     ]
 }
