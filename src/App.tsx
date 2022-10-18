@@ -1,7 +1,7 @@
 import './App.css';
 import styled from 'styled-components';
 import { useState } from 'react';
-import Resume from './components/resume';
+import Resume, { IResumeProps } from './components/resume';
 import * as React from 'react';
 import props from './localConfig.json';
 
@@ -40,10 +40,11 @@ const Viewport = styled.main`
 
 function App() {
   const [state, set] = useState(0);
+  let $props = props as IResumeProps;
 
   return (
     <div className="App">
-      <Viewport><Resume {...props} /></Viewport>
+      <Viewport><Resume {...$props} /></Viewport>
       <Footer>
         <Button onClick={() => set(state + 1)}>跳过 {state}</Button>
         <Button>暂停</Button>

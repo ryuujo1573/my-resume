@@ -5,5 +5,12 @@
     "phone": "",
     "githubId": "",
     "photoSrc": "",
-    "specialties": []
+    "specialties": [],
+    "exps": [
+        {
+            "role": "全国大学生削苹果竞速赛 - 主刀",
+            "period": "2022.4.1",
+            "desc": "理塘が不滅✖︎最速の伝説 最高の城　受賞"
+        }
+    ]
 }
